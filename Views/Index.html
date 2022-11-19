@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barcelona 2–8 Bayern Munich</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../dda.png">
+    <!-- <link src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
+        
+  
+</head>
+
+<body>
+    <!--Header-->
+    
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    
+                    <a href="#"  onclick="page_move('Index.html')"><img id="logoHD" src="../dda.png"
+                            alt="On Topic Shopping Logo" width="125px"></a>
+                </div>
+                <nav>                   
+                    <ul class="text-center">
+                        <li><a href="#" onclick="page_move('Index.html')">Home</a></li>
+                        <li><a href="#" onclick="page_move('About.html')">About</a></li>
+                        <li><a href="#" onclick="page_move('ContactUs.html')">Contact Us</a></li>
+                        <li><a href="#" class="btn btn-info " id="mydiv1" onclick="page_move('login.html')">Login</a></li>
+                        <li><a href="#" class="btn btn-info " id="mydiv2" onclick="page_move('register.html')">Register</a></li>
+                        <li><a href="#" class="btn btn-info "id="mydiv3"  onclick="DeleteCookie()">logout</a></li>
+                    </ul>
+                </nav>
+                
+                <img src="../Project-Images/imagesForProject/ShoppingCart.png" alt="Shopping Cart icon" width="40px"
+                    height="30px">
+                <span id="Cart-Counter">0</span>
+                <a href="#bottom"><img id="to-bottom-icon" src="../Project-Images/imagesForProject/toBottom.png"
+                        alt="Go to Bottom on click icon"></a>
+
+            </div>
+            <div class=" container ">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2>Feel A Whole New<br> Shopping Experience! </h2>
+                        <p> Communication is at the heart of ecommerce and community.<br>Ecommerce isn’t the cherry on the
+                            cake,
+                            it’s the new cake</p>
+                        <!-- <a class="btn">Order Online &#10162;</a> -->
+                    </div>
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <img id="br-img"  src="../Project-Images/slider-imgs/1.png"  alt="Online shopping images">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Slider-->
+    <div class="Slider">
+        <div class="small-container">
+            <h2 class="title" id="search-product">Fashion Slider</h2>
+            <div class="row">
+
+                <div><button class="btn-slider" type="button" onclick="preImg()">&#8678;</button></div>
+
+                <div class="slider-col-3" id="slider-col">
+
+                    <img src="../Project-Images/slider-imgs/1.png" alt="Fashion Images Slide Show" id="img-slider">
+
+                </div>
+                <div><button class="btn-slider" type="button" onclick="nextImg()">&#8680;</button></div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <!--- Categories ------>
+
+
+
+        <div class="categories">
+            <div class="small-container">
+                <h2 class="title" id="search-product">Top Rated Products</h2>
+                <div class="row">
+                    <div class="col-3-filter"><button type="button" onclick="fetchBags()" class="btn-filter"
+                            id="bags">Bags</button></div>
+                    <div class="col-3-filter"><button type="button" onclick="fetchAccessories()" class="btn-filter"
+                            id="accessories">Accessories</button></div>
+                    <div class="col-3-filter"><button type="button" onclick="fetchShoes()" class="btn-filter"
+                            id="shoes">Shoes</button></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product1.png " alt="Diamond Ring" class="Product-Img">
+                        <h4 class="Product-Name">Diamond Ring</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$150.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product2.png " alt="Diamond Couple Ring"
+                            class="Product-Img">
+                        <h4 class="Product-Name">Diamond Couple Ring</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$250.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product3.png " alt="Classic brown shoe"
+                            class="Product-Img">
+                        <h4 class="Product-Name">Classic Shoes - brown</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$70.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product4.png " alt="Colorful Nike Sneakers"
+                            class="Product-Img">
+                        <h4 class="Product-Name">Colorful Nike Sneakers</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$63.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product5.png " alt="pearl Ear ring"
+                            class="Product-Img">
+                        <h4 class="Product-Name">Pearl Ear Ring</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$45.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+                    <div class="col-3">
+                        <img src="../Project-Images/Products/All/product6.png " alt="Cleopatra-style Necklace"
+                            class="Product-Img">
+                        <h4 class="Product-Name">Cleopatra-Style Necklace</h4>
+                        <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                        <p class="Product-Price">$130.00</p>
+                        <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../Project-Images/Products/All/product7.png " alt="Golden Earring"
+                                class="Product-Img">
+                            <h4 class="Product-Name">Golden Ear Ring</h4>
+                            <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                            <p class="Product-Price">$40.00</p>
+                            <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="../Project-Images/Products/All/product8.png " alt="Louis Vuitton Dark-Pink Bag"
+                                class="Product-Img">
+                            <h4 class="Product-Name">Louis Vuitton Bag - Dark Pink</h4>
+                            <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+                            <p class="Product-Price">$170.00</p>
+                            <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                        </div>
+                        <div class="col-3">
+                            <img src="../Project-Images/Products/All/product9.png " alt="Light-Pink Bag"
+                                class="Product-Img">
+                            <h4 class="Product-Name">Fashion Bag - pink</h4>
+                            <h2 class="Product-Rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</h2>
+
+                            <p class="Product-Price">$230.00</p>
+
+                            <a href="" class="btn-Cart" onclick="addToCart(event)">add to Cart &#10009;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Offer-->
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img id="nike-offer" src="../Project-Images/Products/Shoes/Shoes9s.png"
+                                alt="Jordan nike air sneakers" class="offer-img">
+                        </div>
+                        <div class="col-2">
+                            <p>Exclusively Available on On-Topic Shopping</p>
+                            <h2>Jordan Nike Air Sneakers</h2>
+                            <small>There are only three pairs of it around the globe and now it's here!, wanna be a
+                                stylish athlete?<br> Then be quick to get it!</small><br>
+                                <br>
+                                <br>
+                                <br>
+                              
+                            <a class="btn-123" onclick="page_move('Shoe.html')">Buy Now &#8594;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Testimonials-->
+
+        <h2 class="title" id="search-product">Expert Reviews</h2>
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-4-reviews">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Can't be more proud to be a part of this.Having this kind of dedication to customer's
+                            satisfaction mustn't go unawarded, great job and amazing team that is.</p>
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img class="testemonyPic" src="https://via.placeholder.com/150"
+                            alt="Lorm" height="130px">
+                            <h3>Lorm <br> Lorm</h3>
+
+
+                    </div>
+
+                    <div class="col-4-reviews">
+
+                        <i class="fa fa-quote-left"></i>
+                        <p>I'm always passionate about the new colors, now this site not only provides you with the best
+                            quality of service but also a beautiful scenery to enjoy on a daily basis.</p>
+
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img class="testemonyPic" src="https://via.placeholder.com/150"
+                            alt="Lorm" height="130px">
+                            <h3>Lorm <br> Lorm</h3>
+
+
+                    </div>
+
+                    <div class="col-4-reviews">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Never been more proud than i'm today for being a part of this &lt;3 . This is one of the best
+                            shopping sites i've been to in a while! Congratulations, you made my day</p>
+
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+
+                        <img class="testemonyPic" src="https://via.placeholder.com/150"
+                            alt="Lorm" height="130px">
+                        <h3>Lorm <br> Lorm</h3>
+                    </div>
+
+
+                    <div class="col-4-reviews">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Never been happier than i'm today for being a part of this. This is one of the best
+                            shopping sites ,not to mention a great customer service; just AMAZING!</p>
+
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+
+                        <img class="testemonyPic" src="https://via.placeholder.com/150"
+                            alt="Lorm" height="130px">
+                            <h3>Lorm <br> Lorm</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---Brands-->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="../Project-Images/Brands/brand1.png" alt="Levi's Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="../Project-Images/Brands/brand2.png" alt="Lacoste logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="../Project-Images/Brands/brand3.png" alt="Adidas logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="../Project-Images/Brands/brand4.png" alt="Chanel logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="../Project-Images/Brands/brand5.png" alt="Louis Vuitton logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="otherlinks">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2" id="to-top-icon-container">
+                        <a href="#top">
+                            <img src="../Project-Images/imagesForProject/toTop.png" alt="to-top icon" id="to-top-icon">
+                        </a>
+                    </div>
+                    <div class="col-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="../Project-Images/Download-Store-Img/android.png"
+                                alt="Image for Application download for android">
+                            <img src="../Project-Images/Download-Store-Img/ios.png"
+                                alt="Image for Application download for IOS">
+                        </div>
+                    </div>
+                    <!-- <div class="footer-col-2">
+                        <img src="../dda.png" alt="On-Topic logo" id="ft-logo">
+                        <p>Our Purpose Is To Make The Awesome Shopping Experience Accessible To All.</p>
+                    </div> -->
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Buyer's Remorse Policy</li>
+                            <li>Join Us</li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="cpy-right" id="bottom">Copyright &copy; 2022 - reserved</p>
+            </div>
+        </div>
+        <script src="../Scripts/Index-Script.js"></script>
+        <script src="../Scripts/CookieStore.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+    {
+        "name":  "Pink Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag1.png",
+        "imgAlt":"Pink Bag picture",
+        "price":"$40",
+        "rating":3
+    },
+    {
+        "name":  "Louis Vuitton Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag2.png",
+        "imgAlt":"Louis Vuitton Bag picture",
+        "price":"$120",
+        "rating":5
+    },
+    {
+        "name":  "Black Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag3.png",
+        "imgAlt":"Black Bag picture",
+        "price":"$45",
+        "rating":3
+    },
+    {
+        "name":  "Old School Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag4.png",
+        "imgAlt":"Old School Bag picture",
+        "price":"$75",
+        "rating":2
+    },
+    {
+        "name":  "Red Hood Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag5.png",
+        "imgAlt":"Red Hood Bag picture",
+        "price":"$90",
+        "rating":4
+    },
+    {
+        "name":  "Aquatic Blue Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag6.png",
+        "imgAlt":"Aquatic Blue Bag picture",
+        "price":"$72",
+        "rating":3
+    },
+    {
+        "name":  "Red Valvet Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag7.png",
+        "imgAlt":"Red Valvet Bag picture",
+        "price":"$145",
+        "rating":5
+    },
+    {
+        "name":  "Paige Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag8.png",
+        "imgAlt":"Paige Bag picture",
+        "price":"$65",
+        "rating":3
+    },
+    {
+        "name":  "Camping Trip Bag",
+        "imgSrc": "../Project-Images/Products/Bags/bag9.png",
+        "imgAlt":"Camping Trip Bag picture",
+        "price":"$135",
+        "rating":1
+    }
+    
+]

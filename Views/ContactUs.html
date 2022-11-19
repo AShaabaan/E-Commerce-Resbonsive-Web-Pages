@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/ContactUsStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../dda.png">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"  onclick="page_move('Index.html')"><img id="logoHD" src="../dda.png"
+                            alt="On Topic Shopping Logo" width="125px"></a>
+                           
+                </div>
+                <nav>
+                    <ul class="text-center">
+                        <li><a href="#" onclick="page_move('Index.html')">Home</a></li>
+                        <li><a href="#" onclick="page_move('About.html')">About</a></li>
+                        <li><a href="#" onclick="page_move('ContactUs.html')">Contact Us</a></li>
+                        <li><a href="#" class="btn btn-info " id="mydiv1" onclick="page_move('login.html')">Login</a></li>
+                        <li><a href="#" class="btn btn-info " id="mydiv2" onclick="page_move('register.html')">Register</a></li>
+                        <li><a href="#" class="btn btn-info "id="mydiv3"  onclick="DeleteCookie()">logout</a></li>
+                    </ul>
+                </nav>
+                <img src="../Project-Images/imagesForProject/ShoppingCart.png" alt="Shopping Cart icon" width="40px" height="30px">
+                <span id="Cart-Counter">0</span>
+                <a href="#bottom"><img id="to-bottom-icon" src="../Project-Images/imagesForProject/toBottom.png"
+                        alt="Go to Bottom on click icon"></a>
+
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="../Project-Images/imagesForProject/ContactUsImg.png" alt="Customer Service picture" width="500px">
+                    <h1>WE'RE HERE TO HELP. </h1>
+                    <p> Have a question? No need to hold on the phone! Pop in and out of the conversation on WhatsApp or
+                        iMessage as you go about your day. We might take a few minutes to return, but we promise not to
+                        leave you on read.</p>
+                    <a class="btn">Message Us </a>
+                </div>
+                <div class="col-2">
+                    <h1>Please Fill The Form Below </h1>
+                    <p>The On-Topic Escalation Resolution team is here to help address and resolve your concerns
+                        quickly.</p>
+
+                    <p>Fill out this form and our team will respond to your concern.</p>
+                    <form action="">
+                        <div class="input-row">
+
+                            <input type="text" name="" id="" placeholder="Name: ex. Ahmed Abdul" pattern="[A-Za-z]{3,}"
+                                required>
+                        </div>
+                        <div class="input-row">
+
+                            <input type="text" name="" id="" placeholder="Number: ex. 01279785881"
+                                pattern="01+[2,5,0]{1}+[0-9]{8}" required>
+                        </div>
+                        <div class="input-row">
+
+                            <input type="email" name="" id="" placeholder="Email: ex. abdul@gmail.com" required>
+                        </div>
+                        <div class="input-row">
+                            <select name="" id="">
+                                <option value="">Are you an On-Topic customer</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                            </select>
+                        </div>
+                        <div class="input-row">
+                            <input list="products" placeholder="Please specify product of concern" required>
+                            <datalist id="products">
+                                <option value="Apple Products"></option>
+                                <option value="Clothing Products"></option>
+                                <option value="Electronics"></option>
+                                <option value="Accessories"></option>
+                            </datalist>
+                        </div>
+                        <div class="input-row">
+                            <input type="text" name="" id="" placeholder="Concern Topic: ex. Delivery Issue." required>
+                        </div>
+                        <div class="input-row">
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Concern Details :  description of incident details...etc"></textarea>
+                        </div>
+                        <button type="submit" class="btn" id="form-submit">Submit</button> <button type="reset"
+                            class="btn" id="form-reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-opts">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <h2>Messaging <br> Channel</h2>
+                    <p>Reach us now through our online built-in messaging tool to get in touch with a customer service representative from the messaging team</p>
+                    <a class="btn">Message Us </a>
+                </div>
+                <div class="col-2">
+                    <h2>Hot-line <br> Channel</h2>
+                    <p>Reach us now through our Hot-line number to get in touch with a customer service representative over the phone for a quick-resolve</p>
+                    <a href="tel:01279785881" class="btn">Call Us </a>
+                </div>
+                <div class="col-2">
+                    <h2>Back-Office <br> Channel</h2>
+                    <p>Reach us now through our back-office team through Email,one of our back-office team we will be in touch with you in 3 - 5 business days</p>
+                    <a href="mailto:On-Topic.com" class="btn">Email Us </a>
+                </div>
+                <div class="col-2">
+                    <h2>Sales <br> Channel</h2>
+                    <p>Reach our Sales team now! through our online built-in messaging tool to get in touch with a sales representative from the messaging team</p>
+                    <a class="btn">Message Us </a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <!---Brands-->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="../Project-Images/Brands/brand1.png" alt="Levi's Logo">
+                </div>
+                <div class="col-5">
+                    <img src="../Project-Images/Brands/brand2.png" alt="Lacoste logo">
+                </div>
+                <div class="col-5">
+                    <img src="../Project-Images/Brands/brand3.png" alt="Adidas logo">
+                </div>
+                <div class="col-5">
+                    <img src="../Project-Images/Brands/brand4.png" alt="Chanel logo">
+                </div>
+                <div class="col-5">
+                    <img src="../Project-Images/Brands/brand5.png" alt="Louis Vuitton logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="otherlinks">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-2" id="to-top-icon-container">
+                    <a href="#top">
+                        <img src="../Project-Images/imagesForProject/toTop.png" alt="to-top icon" id="to-top-icon">
+                    </a>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../Project-Images/Download-Store-Img/android.png" alt="Image for Application download for android">
+                        <img src="../Project-Images/Download-Store-Img/ios.png" alt="Image for Application download for IOS">
+                    </div>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Buyer's Remorse Policy</li>
+                        <li>Join Us</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="cpy-right" id="bottom">Copyright &copy; 2022 - reserved</p>
+
+        </div>
+    </div>
+   
+    <script src="../Scripts/CookieStore.js"></script>
+    <script>
+        function  page_move(Move){       
+    location.replace(Move);
+  }
+ 
+            // function DeleteCookie(){
+            //         document.cookie = "Password=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Views;";
+            //         document.cookie = "Email=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Views;";
+            //         document.cookie = "FullName=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Views;";
+            //         document.cookie= "mp_52e5e0805583e8a410f1ed50d8e0c049_mixpanel=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";                            
+            //         location.replace("login.html");
+            //     }
+       
+    </script>
+</body>
+
+</html>

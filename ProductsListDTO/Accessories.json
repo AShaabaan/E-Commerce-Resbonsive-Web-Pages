@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Diamond Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc1.png",
+        "imgAlt": "Diamond Ring picture",
+        "price": "$130",
+        "rating": 4
+    },
+    {
+        "name": "Marriage/Engagement Couple Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc2.png",
+        "imgAlt": "Marriage/Engagement Couple Ring picture",
+        "price": "$230",
+        "rating": 5
+    },
+    {
+        "name": "Diamond & Pearl Earring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc3.png",
+        "imgAlt": "Diamond & Pearl Earring picture",
+        "price": "$150",
+        "rating": 4
+    },
+    {
+        "name": "Cleopatra Necklace",
+        "imgSrc": "../Project-Images/Products/Accessories/acc4.png",
+        "imgAlt": "Cleopatra Necklace picture",
+        "price": "$180",
+        "rating": 3
+    },
+    {
+        "name": "Golden Earring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc5.png",
+        "imgAlt": "Golden Earring picture",
+        "price": "$230",
+        "rating": 3
+    },
+    {
+        "name": "Silver Blue Pearl Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc6.png",
+        "imgAlt": "Silver Blue Pearl Ring picture",
+        "price": "$67",
+        "rating": 1
+    },
+    {
+        "name": "Golden Lotus Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc7.png",
+        "imgAlt": "Golden Lotus Ring picture",
+        "price": "$145",
+        "rating": 5
+    },
+    {
+        "name": "King Leopard Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc8.png",
+        "imgAlt": "King Leopard Ring picture",
+        "price": "$300",
+        "rating": 5
+    },
+    {
+        "name": "Silver Couple Ring",
+        "imgSrc": "../Project-Images/Products/Accessories/acc9.png",
+        "imgAlt": "Silver Couple Ring picture",
+        "price": "$110",
+        "rating": 1
+    }
+]

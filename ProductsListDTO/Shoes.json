@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Classical Brown Shoes",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe1.png",
+        "imgAlt": "Classical Brown Shoes picture",
+        "price": "$77",
+        "rating": 3
+    },
+    {
+        "name": "Nike Air Black & Red",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe2.png",
+        "imgAlt": "Nike Air Black and Red picture",
+        "price": "$120",
+        "rating": 5
+    },
+    {
+        "name": "Paige High Heels",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe3.png",
+        "imgAlt": "Paige High Heels picture",
+        "price": "$65,00",
+        "rating": 3
+    },
+    {
+        "name": "Dark tall High Heels",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe4.png",
+        "imgAlt": "Dark tall High Heels picture",
+        "price": "$130,00",
+        "rating": 4
+    },
+    {
+        "name": "Classical Blue High Heels",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe5.png",
+        "imgAlt": "Classical Blue High Heels picture",
+        "price": "$100,00",
+        "rating": 4
+    },
+    {
+        "name": "Gradient Silver Dark High Heels",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe6.png",
+        "imgAlt": "Gradient Silver Dark High Heels picture",
+        "price": "$150,00",
+        "rating": 4
+    },
+    {
+        "name": "Multi-Colored flat slippers",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe7.png",
+        "imgAlt": "Multi-Colored flat slippers picture",
+        "price": "$45,00",
+        "rating": 2
+    },
+    {
+        "name": "Trip Sand Sneakers",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe8.png",
+        "imgAlt": "Trip Sand Sneakers picture",
+        "price": "$80,00",
+        "rating": 3
+    },
+    {
+        "name": "Classic Sandal",
+        "imgSrc": "../Project-Images/Products/Shoes/shoe9.png",
+        "imgAlt": "Classic Sandal picture",
+        "price": "$68,00",
+        "rating": 1
+    }
+]
